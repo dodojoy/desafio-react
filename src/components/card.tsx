@@ -6,7 +6,7 @@ import Content from "./content";
 
 export default function Card() {
   return (
-    <div className="w-64 h-[28rem] bg-[var(--color-card-bg)] p-4 rounded-lg">
+    <div className="w-64 h-[28rem] bg-[var(--color-card-bg)] p-4 rounded-lg scale-100 hover:scale-125 ease-in duration-500">
       <div className="w-10/13 flex flex-col">
         <Image
           src="images/image-equilibrium.jpg"
@@ -44,8 +44,10 @@ export default function Card() {
           divClassName="flex justify-between items-center gap-3"
           imageClassName="w-6 h-6 border-[0.5px] border-[var(--color-white)] border-solid rounded-full "
           paragraphClassName="text-[var(--color-font)] text-[0.7rem] w-full"
-          children="Creation of Jules Wyvern"
-        />
+        >
+          Creation of{" "}
+          <span className="text-[var(--color-white)]">Jules Wyvern</span>
+        </Content>
       </div>
     </div>
   );
