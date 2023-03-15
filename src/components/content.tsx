@@ -1,10 +1,11 @@
 import Paragraph from "./paragraph";
 import Image from "./image";
+import React from "react";
 
 type Props = {
   src: string;
   alt: string;
-  children: string;
+  children: React.ReactNode[] | string;
   divClassName: string;
   imageClassName: string;
   paragraphClassName: string;
